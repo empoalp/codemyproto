@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Login
+  form(method='post', enctype='multipart/form-data', action='/login') 
+    label Username
+    input(type='text', name='user[name]')
+    label Password
+    input(type='password', name='user[password]')
+    input(type='submit', value='Login')

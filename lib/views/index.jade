@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+  .navbar.navbar-fixed-top
+    .navbar-inner
+      .container
+        a.brand(href='/') CodeMyProto
+        .nav-collapse.collapse
+          ul.nav
+            li 
+              a(href='/new') New
+            li
+              a(href='/run') Run prototype
+            li 
+              a(href='/savehtml') Save HTML
+
+  .container-fluid
+    .row-fluid
+      .main-canvas.span12 
+        .drop-image.well.span2.offset5 Drop an image from your computer here
+
